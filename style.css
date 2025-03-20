@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+.banner {
+    background-color: #b973c7;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Contenedor grid */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos de cada unidad */
+.unidad {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+    cursor: default;
+}
+
+.unidad:hover {
+    animation: flotar 2s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes flotar {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.temas {
+    list-style: none;
+    padding-left: 0;
+}
+
+.temas li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #b973c7;
+    color: white;
+}
