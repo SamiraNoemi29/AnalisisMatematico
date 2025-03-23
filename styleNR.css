@@ -1,0 +1,37 @@
+.sail-regular {
+    font-family: "Sail", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.banner{
+    font-family: "Sail", system-ui;
+    font-size: 27px;
+    background-color: #b973c7;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+h3{
+    text-align: left;
+}
+
+p{
+    text-align: left;
+}
+.temas{
+    background-color: #e9dfee;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
